@@ -2,3 +2,135 @@
 Theme Name: Aria
 Author: Petra Homolova
 */
+
+:root {
+    --dark-green: #579692;     /* Dark green */
+    --light-green: #CFE3E4;    /* Light green */
+    --beige: #EFEAE4;          /* Beige */
+    --light-beige: #FAF8F4;    /* Light beige */
+    --white: #FFFFFF;          /* White */
+}
+
+body {
+    background-color: var(--light-beige);
+    font-family: "Fraunces", serif;
+    font-weight: 400; /* Regular weight, adjust as needed */
+    font-style: normal; /* Normal style, adjust if needed */
+    font-optical-sizing: auto; /* Optional: adjust based on design needs */
+}
+
+.h1 {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: var(--light-green);
+}
+
+footer {
+    background-color: var(--light-green);
+    margin-top: 130px;
+}
+
+h4 {
+    color: var(--dark-green);
+    margin-bottom: 30px;
+}
+
+.visitourblog {
+    color: var(--dark-green);
+}
+
+.visitourblog:hover {
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.custom-line {
+    border: none;
+    border-top: 1.5px solid var(--white);
+    width: 90%;
+    background-color: var(--light-green);
+}
+
+.btn {
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--dark-green);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn2 {
+    color: var(--dark-green);
+    background-color: var(--light-green);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    color: var(--dark-green);
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.cards {
+    background-color: var(--beige);
+    transition: 0.3s;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards:hover {
+    background-color: var(--beige);
+    transition: 0.3s;
+    scale: 1.03;
+}
+
+.card-body {
+    background-color: var(--light-beige);
+}
+
+.bestseller-hero {
+background-image: url("images/bestsellershero.jpg");
+background-size: cover; /* Ensures the image covers the entire section */
+background-position: center; /* Centers the image */
+height: 100vh; /* Full viewport height */
+width: 100%; /* Full width */
+display: flex;
+align-items: center;
+justify-content: center;
+color: white; /* Text color */
+text-align: center;
+margin-bottom: 100px;
+}
+
+.logo {
+    font-family: "Plaster", system-ui;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    color: var(--dark-green);
+}
+
+.row-logo {
+    background-color: var(--white);
+}
