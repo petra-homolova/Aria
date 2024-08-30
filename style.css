@@ -19,6 +19,10 @@ body {
     font-optical-sizing: auto; /* Optional: adjust based on design needs */
 }
 
+header {
+    background-color: var(--white);
+}
+
 .h1 {
     color: var(--white);
     font-weight: 800;
@@ -131,6 +135,31 @@ margin-bottom: 100px;
     color: var(--dark-green);
 }
 
+.logo-navbar {
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.logo-navbar:hover {
+    color: var(--dark-green);
+    scale: 1.03;
+    transition: 0.3s;
+}
+
 .row-logo {
     background-color: var(--white);
+}
+
+.navbar-link {
+    transition: 0.3s;
+}
+
+.navbar-second {
+    background-color: var(--white);
+}
+
+.navbar-link:hover {
+    color: var(--light-green);
+    font-weight: 600;
+    transition: 0.3s;
 }

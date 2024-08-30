@@ -14,8 +14,68 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar navbar-expand-lg navbar-light fixed-top">
+    <header class="fixed-top">
+         <!-- First Navbar -->
+         <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <div class="row w-100 px-3">
+                    <div class="col-md-5">
+                        <a class="navbar-brand text-center" href="#">
+                            <!-- SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="6"></circle>
+                                <line x1="16.6" y1="16.6" x2="21" y2="21"></line>
+                            </svg>                            
+                        </a>
+                    </div>
+                    <div class="col-md-2 d-flex justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link logo logo-navbar p-1" href="#">ARIA</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end">
+                        <ul class="navbar-nav p-0 d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>                                    
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.17L12 21.35z"></path>
+                                    </svg>                            
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 9l6-7 6 7"></path>
+                                        <path d="M21 9h-18l1 13h16l1-13z"></path>
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="15" cy="21" r="1"></circle>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Second Navbar -->
+        <nav class="navbar navbar-second navbar-expand-lg p-1 pb-1">
             <div class="container-fluid">
                 <!-- Toggle button for mobile view -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,22 +87,22 @@
                     <ul class="navbar-nav mx-auto">
                         <!-- Dropdown menu -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark mr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-dark mr-5 navbar-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 CATEGORIES
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Bestsellers</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">What's new</a>
+                                <a class="dropdown-item" href="#">Sale</a>
                             </div>
                         </li>
                         <!-- Other items -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark mr-5" href="#">BLOG</a>
+                            <a class="nav-link text-dark mr-5 navbar-link" href="#">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark mr-5" href="#">CONTACT</a>
+                            <a class="nav-link text-dark mr-5 navbar-link" href="#">CONTACT</a>
                         </li>
                     </ul>
                 </div>
