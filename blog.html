@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plaster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Bestsellers</title>
+    <title>Blog</title>
 </head>
 <body>
     <header class="fixed-top">
@@ -91,7 +91,7 @@
                                 Categories
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Bestsellers</a>
+                                <a href="bestsellers.html" class="dropdown-item" href="#">Bestsellers</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">What's new</a>
                                 <a class="dropdown-item" href="#">Sale</a>
@@ -109,26 +109,64 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid bestseller-hero">
+    <div class="container-fluid blog-hero">
         <div class="row">
             <div class="col-md-12 justify-content-center">
-                <h1 class="h1 py-5">BESTSELLERS</h1>
+                <h1 class="h1 py-5">BLOGS</h1>
             </div>
         </div>
     </div>
+ 
+<!---------------------------- Search and Filter ------------------------------->    
+<div class="container-fluid">
 
+<!-- Second Navbar -->
+<nav class="navbar navbar-second navbar-expand-lg p-0 pb-1">
+    <div class="container-fluid">
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Centering the navbar items -->
+            <ul class="navbar-nav mx-auto">
+                <!-- Dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark mr-4 navbar-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="" class="dropdown-item" href="#">Advice</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Styling</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Inspiration</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="search" style=" justify-content: space-between;">
+            <input type="text" name="" id="find" placeholder="search" onkeyup="search()" style="width: 80%; height: 40px;">
+        </div> -->
+</div>
+
+<!---------------------------- Blogs ------------------------------->
+    
     <div class="container">
         <div class="row">
             <!-- Card 1 -->
             <div class="col-md-4 my-5">
                 <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
+                    <img src="images/2.jpg" class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
+                        <h5 class="card-title">The Art of Layering Necklaces</h5>
+                        <h6>advice</h3>
+                        <p class="card-text">Layering necklaces is a trendy way to express your personal style. Start with a delicate chain and add a statement piece for a balanced look. Mix and match different lengths and textures to create a unique ensemble that complements any outfit. Check out our guide to layering necklaces and find your perfect combination.</p>
                         <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
+                            <a href="#" class="btn m-0">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -136,13 +174,12 @@
             <!-- Card 2 -->
             <div class="col-md-4 my-5">
                 <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
+                    <img src="images/7.jpg" class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
+                        <h5 class="card-title">The Timeless Charm of Classic Pearl Earrings</h5>
+                        <p class="card-text">Pearl earrings are a symbol of elegance and sophistication. Whether you're attending a formal event or dressing up a casual outfit, classic pearl earrings add a touch of timeless charm. Their versatility makes them a must-have in every jewelry collection. Discover our range of pearl earrings that blend tradition with contemporary style.</p>
                         <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
+                            <a href="#" class="btn m-0">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -150,13 +187,13 @@
             <!-- Card 3 -->
             <div class="col-md-4 my-5">
                 <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
+                    <img src="images/11.jpg" class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
+                        <h5 class="card-title">Jewelry Trends to Watch in 2024</h5>
+                        <h6>advice</h3>
+                        <p class="card-text">Stay ahead of the fashion curve with the latest jewelry trends for 2024. From bold colors and geometric shapes to personalized pieces, this year’s trends offer something for everyone. Get inspired by our curated collection and stay stylish with the newest trends in jewelry.</p>
                         <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
+                            <a href="#" class="btn m-0">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -164,13 +201,12 @@
             <!-- Card 4 -->
             <div class="col-md-4 my-5">
                 <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
+                    <img src="images/4.jpg" class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
+                        <h5 class="card-title">The Elegance of Minimalist Jewelry</h5>
+                        <p class="card-text">Less is more when it comes to minimalist jewelry. Clean lines and simple designs offer a modern and understated elegance. Ideal for daily wear or as a subtle complement to other pieces, minimalist jewelry enhances your style without overwhelming it. Browse our selection of minimalist pieces for effortless sophistication.</p>
                         <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
+                            <a href="#" class="btn m-0">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -178,13 +214,12 @@
             <!-- Card 5 -->
             <div class="col-md-4 my-5">
                 <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
+                    <img src="images/5.jpg" class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
+                        <h5 class="card-title">Caring for Your Precious Jewelry</h5>
+                        <p class="card-text">To keep your jewelry looking its best, proper care is essential. Regular cleaning, safe storage, and occasional professional maintenance help preserve the beauty of your pieces. Follow our tips for jewelry care and ensure that your treasures remain as dazzling as the day you bought them.</p>
                         <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
+                            <a href="#" class="btn m-0">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -192,107 +227,26 @@
             <!-- Card 6 -->
             <div class="col-md-4 my-5">
                 <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
+                    <img src="images/6.jpg" class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
+                        <h5 class="card-title">Custom Jewelry: Crafting Your Unique Piece</h5>
+                        <p class="card-text">Custom jewelry allows you to create a piece that is truly one-of-a-kind. From choosing the metal and gemstones to designing the setting, every detail is tailored to your vision. Discover the process of creating custom jewelry and let us help you bring your dream piece to life.</p>
                         <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
+                            <a href="#" class="btn m-0">READ MORE</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Card 7 -->
-            <div class="col-md-4 my-5">
-                <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
-                        <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 8 -->
-            <div class="col-md-4 my-5">
-                <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
-                        <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 9 -->
-            <div class="col-md-4 my-5">
-                <div class="cards" style="width: 100%;">
-                    <img src="images/earrings1.png" class="card-img-top p-5" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">ARIA</h5>
-                        <p class="card-text">This is a short description</p>
-                        <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                            <p class="card-text text-center m-0">1 584 DKK</p>
-                            <a href="#" class="btn m-0">BUY NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="container-fluid container-footer">
-            <div class="row px-5 py-3 mb-5 row-logo d-flex justify-content-center">
-                <h5 class="logo m-0">ARIA</h5>
-            </div>
-            <div class="row px-5">
-                <div class="col-md-3 px-5">
-                    <h4>CONTACT US</h4>
-                    <p>Have questions or need support? Reach out to us:</p>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-envelope"></i> ariajewelry@gmail.com</li>
-                        <li><i class="bi bi-telephone"></i> (45) 48 29 28 36</li>
-                        <li><i class="bi bi-geo-alt"></i> 123 Main Street, City, Country</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 px-5">
-                    <h4>ABOUT US</h4>
-                    <p>Get inspired and stay informed with the latest trends, tips, and stories from the world of jewelry.</p>
-                    <a href="#" class="visitourblog">Visit our blog</a>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5 px-5">
-                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                    <p class="text-center">Get the latest updates and offers directly to your inbox</p>
-                    <form>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="email@gmail.com">
-                        </div>
-                        <div class="button d-flex justify-content-center">
-                        <button type="submit" class="btn2">Subscribe now</button>
-                    </div>
-                    </form>
-                </div>
-            </div>
-            <hr class="custom-line mt-5">
-        </div>
 
 
 
-    </footer>
     
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
 </body>
 </html>
+
