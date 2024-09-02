@@ -141,6 +141,65 @@ margin-bottom: 100px;
     margin-bottom: 100px;
     }
 
+.homepage-hero {
+    background-color: #FAF8F4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-img:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.hero-text{
+    background-color: #EFEAE4;
+    padding: 40px 0 20px 0;
+}
+
+.fotky{
+    background-image: url("images/home-6.png");
+    height: 350px;
+    width: 100;
+}
+
+.customer-reviews {
+    background-color: #f9f9f9;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0 100px 0;
+}
+
+.review {
+    background-color: #EFEAE4;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.review-author {
+    font-size: 1em;
+    color: #579692;
+    text-align: right;
+}
+
+.stars {
+    margin-bottom: 10px;
+    color: #579692
+}
+
 .logo {
     font-family: "Plaster", system-ui;
     font-weight: 400;
