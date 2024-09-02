@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plaster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header class="fixed-top">
+         <!-- First Navbar -->
+         <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <div class="row w-100 px-3">
+                    <div class="col-md-5">
+                        <a class="navbar-brand text-center" href="#">
+                            <!-- SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="6"></circle>
+                                <line x1="16.6" y1="16.6" x2="21" y2="21"></line>
+                            </svg>                            
+                        </a>
+                    </div>
+                    <div class="col-md-2 d-flex justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link logo logo-navbar p-1" href="#">ARIA</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end">
+                        <ul class="navbar-nav p-0 d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>                                    
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.17L12 21.35z"></path>
+                                    </svg>                            
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 9l6-7 6 7"></path>
+                                        <path d="M21 9h-18l1 13h16l1-13z"></path>
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="15" cy="21" r="1"></circle>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Second Navbar -->
+        <nav class="navbar navbar-second navbar-expand-lg p-0 pb-1">
+            <div class="container-fluid">
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Centering the navbar items -->
+                    <ul class="navbar-nav mx-auto">
+                        <!-- Dropdown menu -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark mr-4 navbar-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="bestsellers.html" class="dropdown-item" href="#">Bestsellers</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">What's new</a>
+                                <a class="dropdown-item" href="#">Sale</a>
+                            </div>
+                        </li>
+                        <!-- Other items -->
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link text-dark mr-4 navbar-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mr-4 navbar-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+
+<!---------------------------- Blog ------------------------------->
+    
+<div class=" mt-5 container container-fluid">
+    <div class="d-flex justify-content-center">
+        <h1 class="py-5">Jewelry Trends to Watch in 2024</h1>
+    </div>
+    <p>2024 Jewelry Trends: A Year of Bold Statements, Individuality, and Timeless Elegance
+        As we step into 2024, the world of fashion is abuzz with a fresh wave of creativity and innovation. Jewelry, as always, plays a pivotal role in defining our personal style, and this year’s trends are no exception. In 2024, jewelry is about more than just adornment—it’s a powerful tool for self-expression, a way to make bold statements, and a means of blending the past with the future. Whether you’re a trendsetter who loves to push the boundaries or someone who gravitates toward classic, timeless elegance, the jewelry trends for 2024 have something special for everyone. Let’s explore the key trends that will dominate this year, helping you stay ahead of the fashion curve and express your unique style.</p>
+</div>
+
+
+<div class="container">
+    <div class="row align-items-center">
+        <!-- Stĺpec s obrázkom -->
+        <div class="col-md-6">
+            <img src="images/3.jpg" class="img-fluid" alt="Example Image">
+        </div>
+        <!-- Stĺpec s textom -->
+        <div class="col-md-6">
+            <h6>1. Bold Colors</h6>
+            <p>
+One of the most striking trends this year is the use of bold, vibrant colors in jewelry. Designers are moving away from the minimalist, monochromatic palettes of previous years and embracing a spectrum of vivid hues. From deep emerald greens and rich ruby reds to bright sapphire blues and sunny yellows, colorful gemstones are making a big comeback. These pieces are perfect for those who want to add a pop of color to their outfits and make a statement.
+
+Color isn’t limited to gemstones, though. Enamel jewelry is also trending, with designers using this technique to add playful splashes of color to earrings, rings, and necklaces. Whether you prefer subtle pastels or bold primary colors, there’s a colorful piece out there that will resonate with your personal style.
+            </p>
+            <h6>2. Geometric Shapes</h6>
+            <p>
+                Geometric shapes are another key trend in 2024, offering a modern and edgy twist on traditional jewelry designs. From sharp angles and clean lines to abstract forms, geometric jewelry is all about creating visual interest. Think hexagonal rings, triangular earrings, and square bangles – these pieces are designed to stand out and make a statement.
+                
+                What makes geometric jewelry so appealing is its versatility. These pieces can be both minimalistic and bold, making them suitable for a wide range of styles. Whether you’re dressing up for a formal event or adding a touch of sophistication to your everyday look, geometric jewelry can elevate any outfit.</p>
+       <h6>3. Personalized Pieces</h6>
+                <p>
+                    In 2024, jewelry is becoming more personal than ever. Customization is key, with personalized pieces allowing wearers to express their individuality and tell their own stories. Initial necklaces, nameplate bracelets, and birthstone rings are all popular choices for those who want to wear something uniquely theirs.</p>
+       
+         </div>
+    </div>
+
+    <h6>4. Sustainable and Ethical Jewelry</h6>
+    <p>
+    As consumers become more conscious of the impact of their purchases, sustainable and ethical jewelry is taking center stage in 2024. More brands are focusing on using recycled materials, ethically sourced gemstones, and fair-trade practices to create beautiful pieces that don’t harm the planet.
+    
+    This trend is not just about being eco-friendly; it’s also about transparency and craftsmanship. Consumers are increasingly interested in the stories behind their jewelry – where the materials come from, how the pieces are made, and the impact their purchase has on the world. By choosing sustainable and ethical jewelry, you can enjoy stunning designs while supporting practices that make a positive difference.</p>
+
+    <h6>5. Vintage Revival</h6>
+<p>
+    Vintage-inspired jewelry continues to be a major trend in 2024, with a particular focus on the glamour of the past. Art Deco, Victorian, and Retro styles are being reimagined for the modern wearer, with intricate designs, ornate detailing, and timeless elegance making a comeback.
+    
+    Pieces such as cocktail rings, brooches, and chandelier earrings are being revived with a contemporary twist. These vintage-inspired designs are perfect for those who appreciate the beauty of the past but want something that feels fresh and modern. Whether you’re wearing an heirloom piece or a new design inspired by a bygone era, vintage jewelry adds a touch of sophistication and history to any outfit.
+    
+    <h6>Conclusion</h6>
+    </p>
+
+    <p>The jewelry trends for 2024 are all about expressing individuality, embracing bold choices, and mixing the old with the new. Whether you’re drawn to the vibrant colors, geometric shapes, or the timeless appeal of vintage-inspired pieces, there’s something in this year’s trends for everyone. By staying ahead of the fashion curve and incorporating these trends into your wardrobe, you can ensure that your style remains fresh, modern, and uniquely yours. So go ahead, explore these trends, and let your jewelry tell your story in 2024.</p>
+
+</div>
+
+
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
+</body>
+</html>
+
