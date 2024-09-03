@@ -18,7 +18,7 @@ get_header(); // Include the header.php file
         ?>
 
         <div class="contact-form-wrapper">
-            <h4>CONTACT FORM</h4>
+            <h4>SUPPORT FORM</h4>
             <div class="contact-form">
                 <?php
                 echo do_shortcode('[contact-form-7 id="27c0f65" title="Contact form Aria"]');
