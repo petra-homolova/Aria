@@ -138,4 +138,5 @@ if ($short_description) {
 <?php get_footer(); // Include the footer.php file ?>
 <?php wp_footer(); ?>
 </body>
+
 </html>

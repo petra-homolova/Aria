@@ -237,3 +237,18 @@ margin-bottom: 100px;
     font-weight: 600;
     transition: 0.3s;
 }
+.form{
+    background-color: #EFEAE4;
+    border: none;
+    width: 500px;
+}
+
+.container-fluid-contact{
+margin-top: 90px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
