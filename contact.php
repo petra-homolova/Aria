@@ -7,7 +7,7 @@ get_header(); // Include the header.php file
 
 <div class="container-fluid-contact text-center">
     <div class="container mb-5">
-        <h1>CONTACT US</h1>   
+        <h1><?php pll_e("CONTACT US") ?></h1>   
     </div>
     </div>
     <div class="container d-flex justify-content-center mt-5">
@@ -18,7 +18,7 @@ get_header(); // Include the header.php file
         ?>
 
         <div class="contact-form-wrapper">
-            <h4>SUPPORT FORM</h4>
+            <h4><?php pll_e("SUPPORT FORM") ?></h4>
             <div class="contact-form">
                 <?php
                 echo do_shortcode('[contact-form-7 id="27c0f65" title="Contact form Aria"]');
@@ -29,3 +29,5 @@ get_header(); // Include the header.php file
 
 
 <?php get_footer(); // Include the footer.php file ?>
+
+

@@ -6,8 +6,8 @@
         </div>
         <div class="row px-5">
             <div class="col-md-3 px-5">
-                <h4>CONTACT US</h4>
-                <p>Have questions or need support? Reach out to us:</p>
+                <h4><?php pll_e("CONTACT US") ?></h4>
+                <p><?php pll_e("Have questions or need support? Reach out to us:") ?></p>
                 <ul class="list-unstyled">
                     <li><i class="bi bi-envelope"></i> ariajewelry@gmail.com</li>
                     <li><i class="bi bi-telephone"></i> (45) 48 29 28 36</li>
@@ -15,20 +15,20 @@
                 </ul>
             </div>
             <div class="col-md-3 px-5">
-                <h4>ABOUT US</h4>
-                <p>Get inspired and stay informed with the latest trends, tips, and stories from the world of jewelry.</p>
-                <a href="#" class="visitourblog">Visit our blog</a>
+                <h4><?php pll_e("ABOUT US") ?></h4>
+                <p><?php pll_e("Get inspired and stay informed with the latest trends, tips, and stories from the world of jewelry.") ?></p>
+                <a href="#" class="visitourblog"><?php pll_e("Visit our blog") ?></a>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-5 px-5">
-                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                <p class="text-center">Get the latest updates and offers directly to your inbox</p>
+                <h4><?php pll_e("SUBSCRIBE TO OUR NEWSLETTER") ?></h4>
+                <p class="text-center"><?php pll_e("Get the latest updates and offers directly to your inbox") ?></p>
                 <form>
                     <div class="mb-3">
                         <input type="email" class="form-control" placeholder="email@gmail.com">
                     </div>
                     <div class="button d-flex justify-content-center">
-                        <button type="submit" class="btn2">Subscribe now</button>
+                        <button type="submit" class="btn2"><?php pll_e("Subscribe now") ?></button>
                     </div>
                 </form>
             </div>

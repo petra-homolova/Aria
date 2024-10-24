@@ -72,9 +72,6 @@ h4 {
 .btn:hover {
     color: var(--white);
     background-color: var(--dark-green);
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 20px;
     transition: 0.3s;
 }
 
@@ -91,21 +88,21 @@ h4 {
 .btn2:hover {
     color: var(--dark-green);
     background-color: var(--white);
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 20px;
     transition: 0.3s;
 }
 
 .cards {
-    background-color: var(--beige);
+    background-color: var(--lightbeige);
     transition: 0.3s;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cards:hover {
+.row-cards {
+    padding: 100px 320px 150px; /* Padding top/bottom with side padding */
+}
+
+.cards:hover { 
     background-color: var(--beige);
-    transition: 0.3s;
     scale: 1.03;
 }
 
@@ -113,18 +110,19 @@ h4 {
     background-color: var(--light-beige);
 }
 
+
 .bestseller-hero {
-background-image: url("images/bestsellershero.jpg");
-background-size: cover; /* Ensures the image covers the entire section */
-background-position: center; /* Centers the image */
-height: 100vh; /* Full viewport height */
-width: 100%; /* Full width */
-display: flex;
-align-items: center;
-justify-content: center;
-color: white; /* Text color */
-text-align: center;
-margin-bottom: 100px;
+    background-image: url("images/bestsellershero.jpg");
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .blog-hero {
@@ -139,7 +137,7 @@ margin-bottom: 100px;
     color: white; /* Text color */
     text-align: center;
     margin-bottom: 100px;
-    }
+}
 
 .homepage-hero {
     background-color: #FAF8F4;
@@ -150,20 +148,31 @@ margin-bottom: 100px;
     text-align: center;
 }
 
-.custom-img:hover{
-    scale: 1.1;
+.custom-img {
     transition: 0.3s;
 }
 
-.hero-text{
+.custom-img:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+.hero-text {
     background-color: #EFEAE4;
     padding: 40px 0 20px 0;
 }
 
-.fotky{
-    background-image: url("images/home-6.png");
-    height: 350px;
-    width: 100;
+.fotky .col-md-2 {
+    padding: 10px;
+}
+
+.fotky img {
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.fotky img:hover {
+    transform: scale(1.05);
 }
 
 .customer-reviews {
@@ -176,8 +185,8 @@ margin-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 50px 0 100px 0;
+    gap: 5px;
+    padding: 50px 0 300px 0;
 }
 
 .review {
@@ -197,7 +206,7 @@ margin-bottom: 100px;
 
 .stars {
     margin-bottom: 10px;
-    color: #579692
+    color: #579692;
 }
 
 .logo {
@@ -237,14 +246,15 @@ margin-bottom: 100px;
     font-weight: 600;
     transition: 0.3s;
 }
-.form{
+
+.form {
     background-color: #EFEAE4;
     border: none;
     width: 500px;
 }
 
-.container-fluid-contact{
-margin-top: 90px;
+.container-fluid-contact {
+    margin-top: 90px;
 }
 
 .btn {
@@ -252,3 +262,190 @@ margin-top: 90px;
     justify-content: center;
     align-items: center;
 }
+
+.customer-reviews {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    color: #579692;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto; /* Enable scrolling if many reviews */
+}
+
+.review {
+    background-color: #f0ede9;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 600px;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.customer-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #579692;
+}
+
+.stars .star {
+    font-size: 1.5rem;
+    color: #579692; /* Match star color with the theme */
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+    .row-cards {
+        padding: 100px 15px; /* Remove side padding on medium screens */
+    }
+
+    .cards {
+        margin-bottom: 30px; /* Space between cards */
+    }
+
+    .h1 {
+        font-size: 2.5rem; /* Smaller heading on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .row-cards {
+        padding: 60px 15px; /* Further reduced padding for smaller screens */
+        flex-direction: column; /* Stack the cards vertically */
+    }
+
+    .cards {
+        width: 100%; /* Full width for cards */
+    }
+
+    .bestseller-hero {
+        height: 70vh; /* Reduced height for hero section */
+    }
+
+    .btn {
+        padding: 10px 15px; /* Adjust button padding for smaller devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .h1 {
+        font-size: 2rem; /* Smaller heading for mobile screens */
+        text-align: center; /* Center align heading */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+    }
+
+    .review {
+        width: 90%; /* Width of reviews on mobile */
+        margin: 10px auto; /* Center reviews */
+    }
+
+    .customer-reviews {
+        padding: 30px 15px; /* Padding adjustments for mobile */
+    }
+
+    .review-author {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .stars .star {
+        font-size: 1.2rem; /* Smaller star size */
+    }
+}
+
+a {
+    color: #579692;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #020305; /* Change text color on hover */
+    text-decoration: none; /* Ensure underline is removed on hover */
+}
+li {
+    text-align: -webkit-match-parent; /* Maintain existing alignment */
+    margin-right: 20px; /* Add space between list items */
+} 
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row; /* Change to row for horizontal layout */
+    flex-direction: row; /* Change to row for horizontal layout */
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* Optional: Adjusting margin for the last item to prevent extra space */
+.navbar-nav li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.homepage-hero {
+    background-color: #faf8f4; /* Background color */
+    padding: 20px; /* Padding around the section */
+    height: auto; /* Allow height to adjust automatically */
+}
+
+/* Custom image class with transition */
+.custom-img {
+    transition: transform 0.3s; /* Transition for hover effects */
+    display: block; /* Ensure images are block-level elements */
+    margin: 0 auto; /* Center images */
+}
+
+/* Make sure images are fluid and responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Layout for tablet and larger screens (default styles) */
+.homepage-hero .col-md-2 {
+    margin-bottom: 30px; /* Adjust spacing between images */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 576px) {
+    .homepage-hero .col-6 {
+        flex: 0 0 100%; /* Make images full-width on small devices */
+        max-width: 100%; /* Full width */
+    }
+    
+    .custom-img {
+        margin-top: 10px; /* Adjust margin for mobile */
+    }
+    
+    /* Adjusting padding for mobile to prevent overlap with other content */
+    .homepage-hero {
+        padding-bottom: 60px; /* Ensure no overlap */
+    }
+}
+
+

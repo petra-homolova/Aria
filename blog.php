@@ -33,11 +33,11 @@ get_header(); // Include the header.php file
                             <?php else : ?>
                                 <img src="path/to/default-image.jpg" class="card-img-top" alt="Default Image">
                             <?php endif; ?>
-                            <div class="card-body";>
+                            <div class="card-body chcemebiele";>
                                 <h5 class="card-title"><?php echo esc_html($title); ?></h5>
                                 <p class="card-text"><?php echo esc_html($description); ?></p>
-                                <div class="d-flex align-items-center text-center justify-content-between pt-3">
-                                    <a href="<?php the_permalink(); ?>" class="btn m-0">READ MORE</a>
+                                <div class="d-flex align-items-center text-center justify-content-between pb-0">
+                                    <a href="<?php the_permalink(); ?>" class="btn"><?php pll_e("READ MORE") ?></a>
                                 </div>
                             </div>
                         </div>
